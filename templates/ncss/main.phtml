@@ -1,0 +1,26 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- main -->
+
+<main id="main" class="rs-main rs-fn-clearfix">
+
+	<!-- error -->
+
+	<?php if (Tag::getRegistry('contentError')): ?>
+		<div class="rs-wrapper rs-fn-clearfix">
+			<?php echo Tag::partial('templates/ncss/error.phtml'); ?>
+		</div>
+
+	<!-- else content and sidebar -->
+
+	<?php else: ?>
+		<div class="rs-wrapper rs-has-sidebar rs-fn-clearfix">
+			<?php echo Tag::partial(
+			[
+				'templates/ncss/content.phtml',
+				'templates/ncss/sidebar.phtml'
+			]); ?>
+		</div>
+	<?php endif; ?>
+
+</main>

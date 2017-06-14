@@ -1,0 +1,46 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- base -->
+
+<?php echo Tag::base(); ?>
+
+<!-- title -->
+
+<?php echo Tag::title(Helper::getTitle()); ?>
+
+<!-- meta -->
+
+<?php echo Tag::meta()
+	->init()
+	->append('charset', Tag::getSetting('charset'))
+	->append(['name' => 'author', 'content' => Tag::getSetting('author')])
+	->append(['name' => 'generator', 'content' => Tag::getLanguage('name', '_package') . ' ' . Tag::getLanguage('version', '_package')])
+	->append(['name' => 'description', 'content' => Helper::getDescription()])
+	->append(['name' => 'keywords', 'content' => Helper::getKeywords()])
+	->append(['name' => 'robots', 'content' => Helper::getRobots()])
+	->append(['name' => 'viewport', 'content' => 'width=device-width'])
+	->append(['name' => 'theme-color', 'content' => '#000'])
+	->append(['name' => 'msapplication-navbutton-color', 'content' => '#000'])
+	->append(['name' => 'apple-mobile-web-app-status-bar-stylecontent', 'content' => '#000']); ?>
+
+<!-- link -->
+
+<?php echo Tag::link()
+	->init()
+	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
+	->appendFile('//fonts.googleapis.com/css?family=Raleway:300,700&amp;subset=' . Helper::getSubset())
+	->appendFile('dist/styles/base.min.css')
+	->appendFile('templates/ncss/dist/styles/ncss.min.css')
+	->concat(); ?>
+
+<?php echo Tag::link()->init('admin'); ?>
+
+<!-- head script -->
+
+<?php echo Tag::script()
+	->init('head')
+	->prependFile('templates/ncss/assets/scripts/init.js')
+	->prependFile('assets/scripts/init.js')
+	->prependFile('assets/scripts/support.js')
+	->transportVar('rs', Helper::getTransport())
+	->concat(); ?>
