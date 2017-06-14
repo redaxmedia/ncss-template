@@ -1,0 +1,38 @@
+{
+	"name": "ncss-template",
+	"description": "Template for NCSS's website",
+	"version": "3.2.0",
+	"homepage": "https://ncss.io",
+	"license": "GPL-3.0",
+	"author":
+	{
+		"name": "Henry Ruhs",
+		"url": "https://redaxmedia.com"
+	},
+	"devDependencies":
+	{
+		"autoprefixer": "7.1.1",
+		"cssnano": "3.10.0",
+		"colorguard": "1.2.0",
+		"grunt": "1.0.1",
+		"grunt-contrib-watch": "1.0.0",
+		"grunt-htmlhint": "0.9.13",
+		"grunt-jsonlint": "1.1.0",
+		"grunt-postcss": "0.8.0",
+		"grunt-shell": "2.1.0",
+		"load-grunt-tasks": "3.5.2",
+		"postcss": "6.0.1",
+		"postcss-color-function": "4.0.0",
+		"postcss-color-gray": "4.0.0",
+		"postcss-custom-media": "6.0.0",
+		"postcss-custom-properties": "6.0.1",
+		"postcss-custom-selectors": "4.0.1",
+		"postcss-extend": "1.0.5",
+		"postcss-import": "10.0.0",
+		"postcss-nesting": "4.0.1",
+		"postcss-reporter": "4.0.0",
+		"stylefmt": "6.0.0",
+		"stylelint": "7.10.1",
+		"stylelint-order": "0.4.4"
+	}
+}
