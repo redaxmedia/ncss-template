@@ -1,8 +1,10 @@
 <?php namespace Redaxscript\Template; ?>
 
-<!-- sidebar -->
-
 <aside id="sidebar" class="rs-sidebar">
 	<?php echo Tag::searchForm(); ?>
-	<?php echo Tag::extra(); ?>
+
+	<!-- navigation -->
+
+	<?php include('templates/ncss/helper/navigation.php'); ?>
+	<?php include('templates/ncss/navigation.phtml'); ?>
 </aside>

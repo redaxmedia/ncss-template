@@ -12,5 +12,11 @@
 /* @section 1. ncss */
 
 @import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_query.css';
+@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_clearfix.css';
 @import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_redirect.css';
-@import '../../../../vendor/redaxmedia/redaxscript/templates/skeleton/assets/styles/_skeleton.css';
+@import '_variable.css';
+@import 'content.css';
+@import 'documentation.css';
+@import 'helper.css';
+@import 'layout.css';
+@import 'typo.css';

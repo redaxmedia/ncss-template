@@ -1,0 +1,33 @@
+/**
+ * @tableofcontents
+ *
+ * 1. content
+ * 2. comment
+ *
+ * @since 3.2.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. content */
+
+.rs-content
+{
+	word-wrap: break-word;
+}
+
+.rs-title-content,
+.rs-title-content-sub
+{
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+/* @section 2. comment */
+
+.rs-title-comment
+{
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+}

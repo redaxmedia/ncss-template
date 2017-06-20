@@ -1,0 +1,21 @@
+/**
+ * @tableofcontents
+ *
+ * 1. documentation
+ *
+ * @since 3.2.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. documentation */
+
+.rs-link-documentation
+{
+	display: inline-block;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 3em;
+	text-transform: uppercase;
+}
