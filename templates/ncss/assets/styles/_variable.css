@@ -2,9 +2,10 @@
  * @tableofcontents
  *
  * 1. variable
- *    1.1 font
+ *    1.1 color
+ *    1.2 font
  *
- * @since 3.0.0
+ * @since 3.2.0
  *
  * @package NCSS
  * @author Henry Ruhs
@@ -14,7 +15,11 @@
 
 :root
 {
-	/* @section 1.1 font */
+	/* @section 1.1 color */
+
+	--rs-color-primary: #f20060;
+
+	/* @section 1.2 font */
 
 	--rs-font-primary: raleway, arial, sans-serif;
 }

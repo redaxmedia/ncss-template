@@ -4,37 +4,31 @@
 
 <?php foreach ($navigationArray as $categoryArray): ?>
 
-	<!-- title -->
+	<!-- list -->
 
-	<h3 class="rs-title-extra"><?php echo $categoryArray['title']; ?></h3>
+	<ul class="rs-list-sidebar">
+		<?php if ($categoryArray['children']): ?>
+			<?php foreach ($categoryArray['children'] as $subArray): ?>
+				<?php if (Tag::getRegistry('secondParameter') === $subArray['alias']): ?>
+					<li class="rs-item-active">
+				<?php else: ?>
+					<li>
+				<?php endif; ?>
+					<a href="<?php echo $rewriteRoute . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
 
-	<!-- box -->
+					<!-- children -->
 
-	<div class="rs-box-extra">
-		<ul class="rs-list-sidebar">
-			<?php if ($categoryArray['children']): ?>
-				<?php foreach ($categoryArray['children'] as $subArray): ?>
-					<?php if (Tag::getRegistry('secondParameter') === $subArray['alias']): ?>
-						<li class="rs-item-active">
-					<?php else: ?>
-						<li>
+					<?php if ($subArray['children']): ?>
+						<ul class="rs-list-children">
+							<?php foreach ($subArray['children'] as $articleArray): ?>
+								<li>
+									<a href="<?php echo $rewriteRoute . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
+								</li>
+							<?php endforeach; ?>
+						</ul>
 					<?php endif; ?>
-						<a href="<?php echo $rewriteRoute . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
-
-						<!-- children -->
-
-						<?php if ($subArray['children']): ?>
-							<ul class="rs-list-children">
-								<?php foreach ($subArray['children'] as $articleArray): ?>
-									<li>
-										<a href="<?php echo $rewriteRoute . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
-									</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</li>
-				<?php endforeach; ?>
-			<?php endif; ?>
-		</ul>
-	</div>
+				</li>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</ul>
 <?php endforeach; ?>
