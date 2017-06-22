@@ -1,0 +1,29 @@
+/**
+ * @tableofcontents
+ *
+ * 1. content
+ * 2. comment
+ *
+ * @since 3.2.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. sidebar */
+
+.rs-sidebar
+{
+	word-wrap: break-word;
+
+	& .rs-list-children
+	{
+		display: none;
+		padding-left: 0.5em;
+	}
+
+	& .rs-item-active .rs-list-children
+	{
+		display: block;
+	}
+}
