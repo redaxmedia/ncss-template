@@ -22,21 +22,13 @@
 	font: 1em var(--rs-font-primary);
 }
 
-.rs-footer,
-.rs-header,
-.rs-main
-{
-	margin-bottom: 1em;
-	margin-top: 1em;
-}
-
 /* @section 2. wrapper */
 
 .rs-wrapper
 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	min-height: 100vh;
 }
 
 /* @section 3. query */
@@ -48,7 +40,6 @@
 	.rs-wrapper
 	{
 		display: flex;
-		max-width: 100em;
 	}
 
 	.rs-has-sidebar
@@ -60,8 +51,7 @@
 
 		& .rs-sidebar
 		{
-			flex-basis: 28%;
-			margin-left: 2%;
+			flex-basis: 30%;
 		}
 	}
 }
@@ -76,8 +66,6 @@
 		color: gray(0);
 	}
 
-	.rs-footer,
-	.rs-header,
 	.rs-sidebar
 	{
 		display: none;

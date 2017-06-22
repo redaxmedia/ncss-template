@@ -14,7 +14,26 @@
 
 .rs-sidebar
 {
+	background: gray(35);
+	color: gray(135);
 	word-wrap: break-word;
+
+	& .rs-list-sidebar
+	{
+		font-size: 1.125em;
+
+		& a
+		{
+			display: block;
+			padding: 1em;
+		}
+
+		& > li > a
+		{
+			background: var(--rs-color-primary);
+			color: gray(255);
+		}
+	}
 
 	& .rs-list-children
 	{

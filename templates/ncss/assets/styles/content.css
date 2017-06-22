@@ -14,7 +14,13 @@
 
 .rs-content
 {
+	padding: 1em;
 	word-wrap: break-word;
+}
+
+.rs-box-content
+{
+	font-size: 1.25em;
 }
 
 .rs-title-content,
