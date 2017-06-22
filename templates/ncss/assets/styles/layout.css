@@ -52,6 +52,7 @@
 		& .rs-sidebar
 		{
 			flex-basis: 30%;
+			max-width: 20em;
 		}
 	}
 }

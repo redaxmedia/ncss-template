@@ -1,8 +1,7 @@
 /**
  * @tableofcontents
  *
- * 1. content
- * 2. comment
+ * 1. sidebar
  *
  * @since 3.2.0
  *
@@ -20,8 +19,6 @@
 
 	& .rs-list-sidebar
 	{
-		font-size: 1.125em;
-
 		& a
 		{
 			display: block;

@@ -13,6 +13,7 @@
 
 @import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_query.css';
 @import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_redirect.css';
+@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_table.css';
 @import '_variable.css';
 @import 'breadcrumb.css';
 @import 'content.css';
@@ -21,4 +22,5 @@
 @import 'layout.css';
 @import 'pagination.css';
 @import 'sidebar.css';
+@import 'table.css';
 @import 'typo.css';

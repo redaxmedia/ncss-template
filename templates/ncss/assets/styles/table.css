@@ -1,0 +1,25 @@
+/**
+ * @tableofcontents
+ *
+ * 1. table default
+ * 2. wrapper table
+ *
+ * @since 3.2.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. table default */
+
+.rs-table-default
+{
+	@extend %table-default;
+}
+
+/* @section 2. wrapper table */
+
+.rs-wrapper-table
+{
+	@extend %wrapper-table;
+}
