@@ -2,7 +2,7 @@
  * @tableofcontents
  *
  * 1. content
- * 2. comment
+ * 2. code
  *
  * @since 3.2.0
  *
@@ -21,6 +21,12 @@
 .rs-box-content
 {
 	font-size: 1.125em;
+
+	& p:not([class])
+	{
+		line-height: 1.5em;
+		margin: 0.5em 0;
+	}
 }
 
 .rs-title-content,
@@ -30,10 +36,19 @@
 	margin-top: 1em;
 }
 
-/* @section 2. comment */
+/* @section 2. code */
 
-.rs-title-comment
+.rs-code-default
 {
-	margin-bottom: 0.5em;
-	margin-top: 1em;
+	background: var(--rs-color-primary);
+	color: var(--rs-color-secondary);
+	display: block;
+	font: 0.75em/1.25em var(--rs-font-code);
+	padding: 1em;
+	white-space: pre-wrap;
+
+	& + .rs-code-default
+	{
+		margin-top: 1em;
+	}
 }

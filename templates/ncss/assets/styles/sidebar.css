@@ -13,8 +13,8 @@
 
 .rs-sidebar
 {
-	background: gray(35);
-	color: gray(135);
+	background: var(--rs-color-primary);
+	color: var(--rs-color-secondary);
 	word-wrap: break-word;
 
 	& .rs-list-sidebar
@@ -27,7 +27,7 @@
 
 		& > li > a
 		{
-			background: var(--rs-color-primary);
+			background: var(--rs-color-common-01);
 			color: gray(255);
 		}
 	}

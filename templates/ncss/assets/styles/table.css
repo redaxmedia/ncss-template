@@ -2,6 +2,8 @@
  * @tableofcontents
  *
  * 1. table default
+ *    1.1 head and foot
+ *    1.2 body
  * 2. wrapper table
  *
  * @since 3.2.0
@@ -15,6 +17,36 @@
 .rs-table-default
 {
 	@extend %table-default;
+	font-size: 1.125rem;
+
+	& caption,
+	& th,
+	& td
+	{
+		padding: 1em;
+	}
+	
+	/* @section 1.1 head and foot */
+	
+	& caption,
+	& th,
+	& tfoot td
+	{
+		background: var(--rs-color-primary);
+		color: var(--rs-color-secondary);
+	}
+	
+	/* @section 1.2 body */
+	
+	& tbody
+	{
+		background: gray(240);
+	
+		& tr:not(:last-child)
+		{
+			border-bottom: 0.125rem solid gray(255);
+		}
+	}
 }
 
 /* @section 2. wrapper table */

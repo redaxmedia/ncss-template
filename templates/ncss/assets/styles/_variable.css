@@ -3,7 +3,8 @@
  *
  * 1. variable
  *    1.1 color
- *    1.2 font
+ *    1.2 common color
+ *    1.3 font
  *
  * @since 3.2.0
  *
@@ -17,9 +18,21 @@
 {
 	/* @section 1.1 color */
 
-	--rs-color-primary: #29b6f6;
+	--rs-color-primary: #282c34;
+	--rs-color-secondary: #abb2bf;
 
-	/* @section 1.2 font */
+	/* @section 1.2 common color */
+
+	--rs-color-common-01: #e06c75;
+	--rs-color-common-02: #c678dd;
+	--rs-color-common-03: #61aeee;
+	--rs-color-common-04: #56b6c2;
+	--rs-color-common-05: #98c379;
+	--rs-color-common-06: #e6c07b;
+	--rs-color-common-07: #d19a66;
+
+	/* @section 1.3 font */
 
 	--rs-font-primary: raleway, arial, sans-serif;
+	--rs-font-code: monospace, arial, sans-serif;
 }
