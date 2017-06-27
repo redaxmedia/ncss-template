@@ -16,30 +16,4 @@
 	background: var(--rs-color-primary);
 	color: var(--rs-color-secondary);
 	word-wrap: break-word;
-
-	& .rs-list-sidebar
-	{
-		& a
-		{
-			display: block;
-			padding: 1em;
-		}
-
-		& > li > a
-		{
-			background: var(--rs-color-common-01);
-			color: gray(255);
-		}
-	}
-
-	& .rs-list-children
-	{
-		display: none;
-		padding-left: 0.5em;
-	}
-
-	& .rs-item-active .rs-list-children
-	{
-		display: block;
-	}
 }

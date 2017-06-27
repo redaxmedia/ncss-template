@@ -3,6 +3,7 @@
  *
  * 1. content
  * 2. code
+ * 3. byline
  *
  * @since 3.2.0
  *
@@ -51,4 +52,12 @@
 	{
 		margin-top: 1em;
 	}
+}
+
+/* @section 3. byline */
+
+.rs-box-byline
+{
+	font-size: 0.875em;
+	margin-top: 0.5em;
 }

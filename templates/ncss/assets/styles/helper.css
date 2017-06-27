@@ -1,7 +1,8 @@
 /**
  * @tableofcontents
  *
- * 1. redirect
+ * 1. menu
+ * 2. redirect
  *
  * @since 3.2.0
  *
@@ -9,7 +10,49 @@
  * @author Henry Ruhs
  */
 
-/* @section 1. redirect */
+/* @section 1. menu */
+
+.rs-has-menu
+{
+	@extend %fn-has-menu;
+}
+
+.rs-fn-menu
+{
+	@extend %fn-menu;
+}
+
+.rs-fn-toggle-menu
+{
+	@extend %fn-toggle-menu;
+}
+
+.rs-fn-close-menu
+{
+	@extend %fn-close-menu;
+}
+
+.rs-fn-status-menu
+{
+	@extend %fn-status-menu;
+
+	&:checked + .rs-has-menu
+	{
+		min-height: 100vh;
+
+		& .rs-fn-menu
+		{
+			@extend %fn-checked-menu;
+		}
+
+		& .rs-fn-close-menu
+		{
+			@extend %fn-checked-close-menu;
+		}
+	}
+}
+
+/* @section 2. redirect */
 
 .rs-meta-redirect
 {

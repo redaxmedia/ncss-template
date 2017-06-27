@@ -18,7 +18,7 @@
 .rs-body
 {
 	background: gray(255);
-	color: gray(0);
+	color: var(--rs-color-primary);
 	font: 1em var(--rs-font-primary);
 }
 

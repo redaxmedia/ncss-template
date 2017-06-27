@@ -1,0 +1,115 @@
+/**
+ * @tableofcontents
+ *
+ * 1. list
+ * 2. query
+ *    2.1 medium max
+ *
+ * @since 3.2.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. list */
+
+.rs-list-menu
+{
+	& a
+	{
+		display: block;
+		padding: 1em;
+	}
+	
+	& > li > a
+	{
+		background: var(--rs-color-common-01);
+		color: gray(255);
+	}
+
+	& .rs-list-children
+	{
+		display: none;
+		padding-left: 0.5em;
+	}
+
+	& .rs-item-active .rs-list-children
+	{
+		display: block;
+	}
+}
+
+/* @section 2. query */
+
+/* @section 2.1 medium max */
+
+@media (--media-medium-max)
+{
+	.rs-fn-status-menu:checked + .rs-has-menu .rs-fn-menu
+	{
+		transform: translateY(0);
+		transition: opacity 0.4s, transform 0.2s;
+	}
+
+	/* toggle */
+
+	.rs-label-toggle-menu
+	{
+		color: var(--rs-color-primary);
+		cursor: pointer;
+		font: 1em arial;
+		height: 2.25em;
+		max-width: 5em;
+		padding-top: 3.75em;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 25%;
+		z-index: 1000;
+
+		&:before,
+		&:after
+		{
+			background: var(--rs-color-primary);
+			bottom: 3.75em;
+			content: '';
+			height: 0.25em;
+			left: 25%;
+			position: absolute;
+			right: 25%;
+		}
+	}
+
+	.rs-fn-status-menu:not(:checked) + .rs-has-menu .rs-label-toggle-menu:after
+	{
+		box-shadow: 0 -0.5em 0 var(--rs-color-primary), 0 0.5em 0 var(--rs-color-primary);
+	}
+
+	.rs-fn-status-menu:checked + .rs-has-menu .rs-label-toggle-menu
+	{
+		&:before,
+		&:after
+		{
+			transition: transform 0.2s;
+		}
+
+		&:before
+		{
+			transform: rotate(45deg);
+		}
+
+		&:after
+		{
+			transform: rotate(-45deg);
+		}
+	}
+
+	/* close */
+
+	.rs-label-close-menu
+	{
+		background: gray(0, 0.2);
+		transition: opacity 0.2s;
+	}
+}

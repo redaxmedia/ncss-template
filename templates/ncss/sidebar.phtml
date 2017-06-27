@@ -1,6 +1,16 @@
 <?php namespace Redaxscript\Template; ?>
 
-<aside id="sidebar" class="rs-sidebar">
+<aside id="sidebar" class="rs-fn-menu rs-sidebar">
+
+	<!-- branding -->
+
+	<?php if (Tag::getSetting('title')): ?>
+		<h1 class="rs-title-branding">
+			<a href="<?php echo Tag::getRegistry('root'); ?>">
+				<?php echo Tag::getSetting('title'); ?>
+			</a>
+		</h1>
+	<?php endif; ?>
 
 	<!-- navigation -->
 

@@ -22,7 +22,13 @@
 			'templates/admin/script.phtml',
 			'templates/ncss/script.phtml'
 		]); ?>
-		<?php echo Tag::partial('templates/admin/panel.phtml'); ?>
-		<?php echo $body; ?>
+		<?php echo Tag::partial(
+		[
+			'templates/ncss/menu-status.phtml',
+			'templates/admin/panel.phtml'
+		]); ?>
+		<div class="rs-has-menu">
+			<?php echo $body; ?>
+		</div>
 	</body>
 </html>
