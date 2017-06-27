@@ -46,12 +46,12 @@
 	{
 		& .rs-content
 		{
-			flex-basis: 70%;
+			flex-basis: 100%;
 		}
 
 		& .rs-sidebar
 		{
-			flex-basis: 30%;
+			flex-basis: 40%;
 			max-width: 20em;
 		}
 	}
