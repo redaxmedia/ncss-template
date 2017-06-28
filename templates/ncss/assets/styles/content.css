@@ -30,11 +30,20 @@
 	}
 }
 
+.rs-title-content
+{
+	font-size: 2em;
+}
+
 .rs-title-content,
 .rs-title-content-sub
 {
 	margin-bottom: 0.5em;
-	margin-top: 1em;
+
+	&:not(:first-child)
+	{
+		margin-top: 1.5em;
+	}
 }
 
 /* @section 2. code */

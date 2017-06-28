@@ -1,9 +1,10 @@
 /**
  * @tableofcontents
  *
- * 1. list
- * 2. query
- *    2.1 medium max
+ * 1. title
+ * 2. list
+ * 3. query
+ *    3.1 medium max
  *
  * @since 3.2.0
  *
@@ -11,7 +12,17 @@
  * @author Henry Ruhs
  */
 
-/* @section 1. list */
+/* @section 1. title */
+
+.rs-title-menu
+{
+	color: var(--rs-color-common-01);
+	font-size: 2.75em;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+/* @section 2. list */
 
 .rs-list-menu
 {
@@ -39,9 +50,9 @@
 	}
 }
 
-/* @section 2. query */
+/* @section 3. query */
 
-/* @section 2.1 medium max */
+/* @section 3.1 medium max */
 
 @media (--media-medium-max)
 {
@@ -55,7 +66,7 @@
 
 	.rs-label-toggle-menu
 	{
-		color: var(--rs-color-primary);
+		color: var(--rs-color-common-01);
 		cursor: pointer;
 		font: 1em arial;
 		height: 2.25em;
@@ -71,7 +82,7 @@
 		&:before,
 		&:after
 		{
-			background: var(--rs-color-primary);
+			background: var(--rs-color-common-01);
 			bottom: 3.75em;
 			content: '';
 			height: 0.25em;
@@ -83,7 +94,7 @@
 
 	.rs-fn-status-menu:not(:checked) + .rs-has-menu .rs-label-toggle-menu:after
 	{
-		box-shadow: 0 -0.5em 0 var(--rs-color-primary), 0 0.5em 0 var(--rs-color-primary);
+		box-shadow: 0 -0.5em 0 var(--rs-color-common-01), 0 0.5em 0 var(--rs-color-common-01);
 	}
 
 	.rs-fn-status-menu:checked + .rs-has-menu .rs-label-toggle-menu

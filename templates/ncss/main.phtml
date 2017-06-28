@@ -3,25 +3,20 @@
 <!-- main -->
 
 <main id="main" class="rs-main">
-	<?php echo Tag::partial('templates/ncss/menu-toggle.phtml'); ?>
+
+	<!-- sidebar -->
+
+	<?php echo Tag::partial('templates/ncss/sidebar.phtml'); ?>
 
 	<!-- error -->
 
 	<?php if (Tag::getRegistry('contentError')): ?>
-		<div class="rs-wrapper">
-			<?php echo Tag::partial('templates/ncss/error.phtml'); ?>
-		</div>
+		<?php echo Tag::partial('templates/ncss/error.phtml'); ?>
 
-	<!-- else content and sidebar -->
+	<!-- else content -->
 
 	<?php else: ?>
-		<div class="rs-wrapper rs-has-sidebar">
-			<?php echo Tag::partial(
-			[
-				'templates/ncss/sidebar.phtml',
-				'templates/ncss/content.phtml'
-			]); ?>
-		</div>
+		<?php echo Tag::partial('templates/ncss/content.phtml'); ?>
 	<?php endif; ?>
 
 </main>

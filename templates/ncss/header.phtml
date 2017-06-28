@@ -3,25 +3,18 @@
 <!-- header -->
 
 <header id="header" class="rs-header">
-	<section class="rs-wrapper">
 
-		<div class="rs-box-header">
+	<!-- title -->
 
-			<!-- title -->
+	<?php if (Tag::getSetting('title')): ?>
+		<h1 class="rs-title-header">
+			<a href="<?php echo Tag::getRegistry('root'); ?>">
+				<?php echo Tag::getSetting('title'); ?>
+			</a>
+		</h1>
+	<?php endif; ?>
 
-			<?php if (Tag::getSetting('title')): ?>
-				<h1 class="rs-title-header">
-					<a href="<?php echo Tag::getRegistry('root'); ?>">
-						<?php echo Tag::getSetting('title'); ?>
-					</a>
-				</h1>
-			<?php endif; ?>
+	<!-- menu -->
 
-			<!-- description -->
-
-			<?php if (Tag::getSetting('description')): ?>
-				<span class="rs-text-header" title="<?php echo Tag::getSetting('description'); ?>"><?php echo Tag::getSetting('description'); ?></span>
-			<?php endif; ?>
-		</div>
-	</section>
+	<?php echo Tag::partial('templates/ncss/menu-toggle.phtml'); ?>
 </header>

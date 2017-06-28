@@ -2,7 +2,7 @@
  * @tableofcontents
  *
  * 1. general
- * 2. wrapper
+ * 2. main
  * 3. query
  *    3.1 medium min
  *    3.2 print
@@ -22,12 +22,10 @@
 	font: 1em var(--rs-font-primary);
 }
 
-/* @section 2. wrapper */
+/* @section 2. main */
 
-.rs-wrapper
+.rs-main
 {
-	margin-left: auto;
-	margin-right: auto;
 	min-height: 100vh;
 }
 
@@ -37,24 +35,22 @@
 
 @media (--media-medium-min)
 {
-	.rs-wrapper
+	.rs-main
 	{
 		display: flex;
 	}
 
-	.rs-has-sidebar
+	.rs-content
 	{
-		& .rs-content
-		{
-			flex-basis: 100%;
-		}
-
-		& .rs-sidebar
-		{
-			flex-basis: 40%;
-			max-width: 20em;
-		}
+		flex-basis: 100%;
 	}
+
+	.rs-sidebar
+	{
+		flex-basis: 50%;
+		max-width: 20em;
+	}
+
 }
 
 /* @section 3.2 print */
