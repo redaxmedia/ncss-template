@@ -1,0 +1,18 @@
+/**
+ * @tableofcontents
+ *
+ * 1. media
+ *
+ * @since 3.0.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. media */
+
+.rs-image-default,
+.rs-video-default
+{
+	width: 100%;
+}

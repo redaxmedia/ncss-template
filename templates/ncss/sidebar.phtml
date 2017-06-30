@@ -2,7 +2,7 @@
 
 <aside id="sidebar" class="rs-fn-menu rs-sidebar">
 
-	<!-- branding -->
+	<!-- title -->
 
 	<?php if (Tag::getSetting('title')): ?>
 		<h1 class="rs-title-menu">
@@ -16,4 +16,8 @@
 
 	<?php include('templates/ncss/helper/navigation.php'); ?>
 	<?php include('templates/ncss/navigation.phtml'); ?>
+
+	<!-- search -->
+
+	<?php echo Tag::searchForm(); ?>
 </aside>

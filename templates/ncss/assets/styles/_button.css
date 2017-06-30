@@ -1,0 +1,40 @@
+/**
+ * @tableofcontents
+ *
+ * 1. button
+ * 2. query
+ *    2.1 medium max
+ *
+ * @since 3.0.0
+ *
+ * @package NCSS
+ * @author Henry Ruhs
+ */
+
+/* @section 1. button */
+
+%rs-button
+{
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.75em 0.5em;
+
+	&[disabled]
+	{
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+
+/* @section 2. query */
+
+/* @section 2.1 medium max */
+
+@media (--media-medium-max)
+{
+	%rs-button
+	{
+		text-align: center;
+		width: 100%;
+	}
+}

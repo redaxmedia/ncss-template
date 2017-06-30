@@ -2,6 +2,8 @@
  * @tableofcontents
  *
  * 1. pagination
+ * 2. query
+ *    2.1 medium max
  *
  * @since 3.2.0
  *
@@ -13,14 +15,33 @@
 
 .rs-list-pagination
 {
+	margin-top: 1em;
+	text-align: center;
+
 	& li
 	{
 		display: inline-block;
+		margin: 0.5em;
 	}
 
 	& a,
 	& span
 	{
+		background: var(--rs-color-primary);
+		color: var(--rs-color-secondary);
 		display: block;
+		padding: 0.75em 0.5em;
+	}
+}
+
+/* @section 2. query */
+
+/* @section 2.1 medium max */
+
+@media (--media-medium-max)
+{
+	.rs-list-pagination .rs-item-number:not(.rs-item-active)
+	{
+		display: none;
 	}
 }
