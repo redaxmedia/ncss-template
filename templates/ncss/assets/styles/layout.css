@@ -5,8 +5,9 @@
  * 2. main
  * 3. query
  *    3.1 medium min
+ *    3.2 medium max
  *
- * @since 3.2.0
+ * @since 3.2.1
  *
  * @package NCSS
  * @author Henry Ruhs
@@ -28,6 +29,11 @@
 	min-height: 100vh;
 }
 
+.rs-sidebar
+{
+	max-width: 15em;
+}
+
 /* @section 3. query */
 
 /* @section 3.1 medium min */
@@ -47,6 +53,15 @@
 	.rs-sidebar
 	{
 		flex-basis: 50%;
-		max-width: 20em;
+	}
+}
+
+/* @section 3.2 medium max */
+
+@media (--media-medium-max)
+{
+	.rs-sidebar
+	{
+		width: 75%;
 	}
 }
