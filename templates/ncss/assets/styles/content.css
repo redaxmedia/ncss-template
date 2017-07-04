@@ -58,7 +58,32 @@
 	margin-top: 0.5em;
 }
 
-/* @section 2. code */
+/* @section 2. quote */
+
+.rs-quote-default
+{
+	font: 1.25em/1.75em var(--rs-font-primary);
+}
+
+@media (--media-medium-min)
+{
+	.rs-quote-default
+	{
+		margin: 1em 1em 1em 3em;
+		position: relative;
+
+		&:before
+		{
+			content: '\201d';
+			font: 6em/1em var(--rs-font-quote);
+			left: -0.5em;
+			position: absolute;
+			top: -0.125em;
+		}
+	}
+}
+
+/* @section 3. code */
 
 .rs-code-default
 {

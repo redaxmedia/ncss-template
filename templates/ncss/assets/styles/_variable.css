@@ -34,5 +34,6 @@
 	/* @section 1.3 font */
 
 	--rs-font-primary: raleway, arial, sans-serif;
+	--rs-font-quote: georgia, times, serif;
 	--rs-font-code: monospace, arial, sans-serif;
 }
