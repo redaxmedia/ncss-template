@@ -27,6 +27,19 @@ module.exports = function (grunt)
 				]
 			}
 		},
+		ncsslint:
+		{
+			templateNCSS:
+			{
+				options:
+				{
+					path: 'templates/ncss/*.phtml',
+					namespace: 'rs',
+					loglevel: 'info',
+					haltonerror: true
+				}
+			}
+		},
 		htmlhint:
 		{
 			templates:
@@ -174,6 +187,7 @@ module.exports = function (grunt)
 		'jsonlint',
 		'stylelint',
 		'colorguard',
+		'ncsslint',
 		'htmlhint',
 		'toclint'
 	]);
