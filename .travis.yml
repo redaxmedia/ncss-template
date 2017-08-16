@@ -10,9 +10,8 @@ install:
 - composer self-update
 - composer install
 - nvm install 6
-- npm install --global ied
 - npm install --global grunt-cli
-- ied install
+- npm install
 
 script:
 - grunt
