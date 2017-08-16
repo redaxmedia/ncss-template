@@ -11,7 +11,7 @@
 	},
 	"devDependencies":
 	{
-		"autoprefixer": "7.1.1",
+		"autoprefixer": "7.1.2",
 		"cssnano": "3.10.0",
 		"colorguard": "1.2.0",
 		"grunt": "1.0.1",
@@ -22,7 +22,7 @@
 		"grunt-postcss": "0.8.0",
 		"grunt-shell": "2.1.0",
 		"load-grunt-tasks": "3.5.2",
-		"postcss": "6.0.4",
+		"postcss": "6.0.9",
 		"postcss-color-function": "4.0.0",
 		"postcss-color-gray": "4.0.0",
 		"postcss-custom-media": "6.0.0",
@@ -31,9 +31,9 @@
 		"postcss-extend": "1.0.5",
 		"postcss-import": "10.0.0",
 		"postcss-nesting": "4.0.1",
-		"postcss-reporter": "4.0.0",
+		"postcss-reporter": "5.0.0",
 		"stylefmt": "6.0.0",
-		"stylelint": "7.12.0",
-		"stylelint-order": "0.5.0"
+		"stylelint": "8.0.0",
+		"stylelint-order": "0.6.0"
 	}
 }
