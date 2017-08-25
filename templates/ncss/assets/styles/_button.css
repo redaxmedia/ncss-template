@@ -15,6 +15,7 @@
 
 %rs-button
 {
+	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
 	padding: 0.75em 0.5em;
