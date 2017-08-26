@@ -6,174 +6,10 @@ module.exports = function (grunt)
 
 	grunt.initConfig(
 	{
-		version: grunt.file.readJSON('package.json').version,
-		jsonlint:
-		{
-			dependency:
-			{
-				src:
-				[
-					'composer.json',
-					'package.json'
-				]
-			},
-			ruleset:
-			{
-				src:
-				[
-					'.htmlhintrc',
-					'.stylelintrc',
-					'.tocgen'
-				]
-			}
-		},
-		ncsslint:
-		{
-			templateNCSS:
-			{
-				options:
-				{
-					path: 'templates/ncss/*.phtml',
-					namespace: 'rs',
-					loglevel: 'info',
-					haltonerror: true
-				}
-			}
-		},
-		htmlhint:
-		{
-			templates:
-			{
-				src:
-				[
-					'templates/**/*.phtml'
-				]
-			},
-			options:
-			{
-				htmlhintrc: '.htmlhintrc'
-			}
-		},
-		postcss:
-		{
-			templateNCSS:
-			{
-				src:
-				[
-					'templates/ncss/assets/styles/_ncss.css'
-				],
-				dest: 'templates/ncss/dist/styles/ncss.min.css'
-			},
-			stylelint:
-			{
-				src:
-				[
-					'templates/*/assets/styles/*.css'
-				],
-				options:
-				{
-					processors:
-					[
-						require('stylelint'),
-						require('postcss-reporter')(
-						{
-							throwError: true
-						})
-					]
-				}
-			},
-			stylefmt:
-			{
-				src:
-				[
-					'templates/*/assets/styles/*.css'
-				],
-				options:
-				{
-					processors:
-					[
-						require('stylefmt')
-					]
-				}
-			},
-			colorguard:
-			{
-				src:
-				[
-					'templates/*/dist/styles/*.css'
-				],
-				options:
-				{
-					processors:
-					[
-						require('colorguard')(
-						{
-							threshold: 2,
-							allowEquivalentNotation: true
-						}),
-						require('postcss-reporter')(
-						{
-							throwError: true
-						})
-					]
-				}
-			},
-			options:
-			{
-				processors:
-				[
-					require('postcss-import'),
-					require('postcss-custom-properties'),
-					require('postcss-custom-media'),
-					require('postcss-custom-selectors'),
-					require('postcss-nesting'),
-					require('postcss-extend'),
-					require('postcss-color-gray'),
-					require('postcss-color-function'),
-					require('autoprefixer')(
-					{
-						browsers: 'last 2 versions'
-					}),
-					require('cssnano')(
-					{
-						autoprefixer: false,
-						colormin: false,
-						zindex: false
-					})
-				]
-			}
-		},
-		shell:
-		{
-			tocTemplates:
-			{
-				command: 'sh vendor/bin/tocgen.sh templates/ncss/assets/styles .tocgen'
-			},
-			toclintTemplates:
-			{
-				command: 'sh vendor/bin/tocgen.sh templates/ncss/assets/styles .tocgen -l'
-			},
-			options:
-			{
-				stdout: true,
-				failOnError: true
-			}
-		},
-		watch:
-		{
-			styles:
-			{
-				files:
-				[
-					'assets/styles/*.css',
-					'templates/**/assets/styles/*.css'
-				],
-				tasks:
-				[
-					'build-styles'
-				]
-			}
-		}
+		jsonlint: require('./tasks/jsonlint')(grunt),
+		ncsslint: require('./tasks/ncsslint')(grunt),
+		htmlhint: require('./tasks/htmlhint')(grunt),
+		postcss: require('./tasks/postcss')(grunt)
 	});
 
 	/* load tasks */
@@ -188,8 +24,7 @@ module.exports = function (grunt)
 		'stylelint',
 		'colorguard',
 		'ncsslint',
-		'htmlhint',
-		'toclint'
+		'htmlhint'
 	]);
 	grunt.registerTask('stylelint',
 	[
@@ -202,14 +37,6 @@ module.exports = function (grunt)
 	grunt.registerTask('colorguard',
 	[
 		'postcss:colorguard'
-	]);
-	grunt.registerTask('toclint',
-	[
-		'shell:toclintTemplates'
-	]);
-	grunt.registerTask('toc',
-	[
-		'shell:tocTemplates'
 	]);
 	grunt.registerTask('build',
 	[
