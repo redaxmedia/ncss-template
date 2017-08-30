@@ -1,7 +1,7 @@
 {
 	"name": "redaxmedia/ncss-template",
 	"description": "Template for NCSS's website",
-	"version": "3.2.2",
+	"version": "3.2.3",
 	"homepage": "https://ncss.io",
 	"license": "GPL-3.0",
 	"require":
