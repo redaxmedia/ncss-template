@@ -10,6 +10,6 @@
 	},
 	"require-dev":
 	{
-		"redaxmedia/redaxscript": "dev-master"
+		"redaxscript/redaxscript": "dev-master"
 	}
 }
