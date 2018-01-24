@@ -8,10 +8,7 @@ module.exports = function ()
 		{
 			options:
 			{
-				path: 'templates/*/*.phtml',
-				namespace: 'rs',
-				loglevel: 'info',
-				haltonerror: true
+				path: 'templates/*/*.phtml'
 			}
 		}
 	};
