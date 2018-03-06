@@ -71,7 +71,10 @@ module.exports = () =>
 			processors:
 			[
 				require('postcss-import'),
-				require('postcss-custom-properties'),
+				require('postcss-custom-properties')(
+				{
+					preserve: false
+				}),
 				require('postcss-custom-media'),
 				require('postcss-custom-selectors'),
 				require('postcss-nesting'),
