@@ -3,14 +3,9 @@
  *
  * 1. menu
  * 2. redirect
- *
- * @since 3.2.0
- *
- * @package NCSS
- * @author Henry Ruhs
  */
 
-/* @section 1. menu */
+/** @section 1. menu */
 
 .rs-has-menu
 {
@@ -52,7 +47,7 @@
 	}
 }
 
-/* @section 2. redirect */
+/** @section 2. redirect */
 
 .rs-meta-redirect
 {

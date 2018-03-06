@@ -6,14 +6,9 @@
  *    1.2 box
  * 2. quote
  * 3. code
- *
- * @since 3.2.1
- *
- * @package NCSS
- * @author Henry Ruhs
  */
 
-/* @section 1. content */
+/** @section 1. content */
 
 .rs-content
 {
@@ -21,7 +16,7 @@
 	word-wrap: break-word;
 }
 
-/* @section 1.1 title */
+/** @section 1.1 title */
 
 .rs-title-content
 {
@@ -40,7 +35,7 @@
 	margin-top: 1em;
 }
 
-/* @section 1.2 box */
+/** @section 1.2 box */
 
 .rs-box-content
 {
@@ -59,7 +54,7 @@
 	margin-top: 0.5em;
 }
 
-/* @section 2. quote */
+/** @section 2. quote */
 
 .rs-quote-default
 {
@@ -84,7 +79,7 @@
 	}
 }
 
-/* @section 3. code */
+/** @section 3. code */
 
 .rs-code-default
 {

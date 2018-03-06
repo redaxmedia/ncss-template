@@ -5,14 +5,9 @@
  * 2. query
  *    2.1 medium max
  *    2.2 medium min
- *
- * @since 3.0.0
- *
- * @package NCSS
- * @author Henry Ruhs
  */
 
-/* @section 1. button */
+/** @section 1. button */
 
 .rs-button-default
 {
@@ -21,9 +16,9 @@
 	color: gray(255);
 }
 
-/* @section 2. query */
+/** @section 2. query */
 
-/* @section 2.1 medium max */
+/** @section 2.1 medium max */
 
 @media (--media-medium-max)
 {
@@ -33,7 +28,7 @@
 	}
 }
 
-/* @section 2.2 medium min */
+/** @section 2.2 medium min */
 
 @media (--media-medium-min)
 {

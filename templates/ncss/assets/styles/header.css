@@ -4,14 +4,9 @@
  * 1. header
  * 2. query
  *    2.1 medium min
- *
- * @since 3.2.0
- *
- * @package NCSS
- * @author Henry Ruhs
  */
 
-/* @section 1. header */
+/** @section 1. header */
 
 .rs-header
 {
@@ -27,9 +22,9 @@
 	overflow: hidden;
 }
 
-/* @section 2. query */
+/** @section 2. query */
 
-/* @section 2.1 medium min */
+/** @section 2.1 medium min */
 
 @media (--media-medium-min)
 {
