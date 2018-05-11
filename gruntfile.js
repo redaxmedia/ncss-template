@@ -6,9 +6,9 @@ module.exports = grunt =>
 
 	grunt.initConfig(
 	{
+		htmlhint: require('./tasks/htmlhint')(grunt),
 		jsonlint: require('./tasks/jsonlint')(grunt),
 		ncsslint: require('./tasks/ncsslint')(grunt),
-		htmlhint: require('./tasks/htmlhint')(grunt),
 		postcss: require('./tasks/postcss')(grunt),
 		tocgen: require('./tasks/tocgen')(grunt)
 	});
