@@ -3,9 +3,6 @@
  *
  * 1. general
  * 2. main
- * 3. query
- *    3.1 medium min
- *    3.2 medium max
  */
 
 /** @section 1. general */
@@ -21,42 +18,12 @@
 
 .rs-main
 {
+	display: flex;
 	min-height: 100vh;
 }
 
 .rs-sidebar
 {
+	flex-basis: 100%;
 	max-width: 15em;
-}
-
-/** @section 3. query */
-
-/** @section 3.1 medium min */
-
-@media (--media-medium-min)
-{
-	.rs-main
-	{
-		display: flex;
-	}
-
-	.rs-content
-	{
-		flex-basis: 100%;
-	}
-
-	.rs-sidebar
-	{
-		flex-basis: 50%;
-	}
-}
-
-/** @section 3.2 medium max */
-
-@media (--media-medium-max)
-{
-	.rs-sidebar
-	{
-		width: 75%;
-	}
 }

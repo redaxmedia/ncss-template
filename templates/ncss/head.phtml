@@ -29,7 +29,6 @@
 	->init()
 	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
 	->appendFile('https://fonts.googleapis.com/css?family=Raleway:300,700&amp;subset=' . Helper::getSubset())
-	->appendFile('dist/styles/base.min.css')
 	->appendFile('templates/ncss/dist/styles/ncss.min.css')
 	->concat(); ?>
 
@@ -40,6 +39,5 @@
 <?php echo Tag::script()
 	->init('head')
 	->prependFile('assets/scripts/init.js')
-	->prependFile('assets/scripts/support.js')
 	->transportVar('rs', Helper::getTransport())
 	->concat(); ?>

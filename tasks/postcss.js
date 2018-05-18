@@ -87,8 +87,8 @@ module.exports = () =>
 				}),
 				require('cssnano')(
 				{
-					autoprefixer: false,
 					colormin: false,
+					reduceIdents: false,
 					zindex: false
 				})
 			]
