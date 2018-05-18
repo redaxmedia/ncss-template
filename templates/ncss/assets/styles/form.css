@@ -8,17 +8,15 @@
 
 .rs-form-default
 {
-	& fieldset li
+	& fieldset li + li
 	{
-		margin-bottom: 0.5em;
-		margin-top: 0.5em;
+		margin-top: 1em;
 	}
 
 	& .rs-label-default
 	{
 		display: block;
-		margin-bottom: 0.25em;
-		margin-top: 1.5em;
+		margin-bottom: 0.5em;
 
 		&:after
 		{
