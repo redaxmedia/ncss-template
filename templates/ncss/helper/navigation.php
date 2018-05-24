@@ -1,9 +1,9 @@
 <?php
-namespace Redaxscript\Template;
+namespace Redaxscript;
 
 $navigationArray = [];
-$categories = Tag::categoryRaw()->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
-$articles = Tag::articleRaw()->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
+$categories = Db::forTablePrefix('categories')->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
+$articles = Db::forTablePrefix('articles')->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
 
 /* process categories */
 
