@@ -4,10 +4,10 @@
 
 	<!-- title -->
 
-	<?php if (Tag::getSetting('title')): ?>
+	<?php if (Helper::getSetting('title')): ?>
 		<h1 class="rs-title-menu">
-			<a href="<?php echo Tag::getRegistry('root'); ?>">
-				<?php echo Tag::getSetting('title'); ?>
+			<a href="<?php echo Helper::getRegistry('root'); ?>">
+				<?php echo Helper::getSetting('title'); ?>
 			</a>
 		</h1>
 	<?php endif; ?>

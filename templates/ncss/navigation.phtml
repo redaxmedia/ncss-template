@@ -7,12 +7,12 @@
 	<ul class="rs-list-menu">
 		<?php if ($categoryArray['children']): ?>
 			<?php foreach ($categoryArray['children'] as $subArray): ?>
-				<?php if (Tag::getRegistry('secondParameter') === $subArray['alias']): ?>
+				<?php if (Helper::getRegistry('secondParameter') === $subArray['alias']): ?>
 					<li class="rs-item-active">
 				<?php else: ?>
 					<li>
 				<?php endif; ?>
-					<a href="<?php echo Tag::getRegistry('rewriteRoute') . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
+					<a href="<?php echo Helper::getRegistry('rewriteRoute') . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
 
 					<!-- children -->
 
@@ -20,7 +20,7 @@
 						<ul class="rs-list-children">
 							<?php foreach ($subArray['children'] as $articleArray): ?>
 								<li>
-									<a href="<?php echo Tag::getRegistry('rewriteRoute') . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
+									<a href="<?php echo Helper::getRegistry('rewriteRoute') . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
 								</li>
 							<?php endforeach; ?>
 						</ul>
