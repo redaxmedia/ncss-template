@@ -81,6 +81,7 @@ module.exports = () =>
 				require('postcss-extend'),
 				require('postcss-color-gray'),
 				require('postcss-color-function'),
+				require('postcss-rtl'),
 				require('autoprefixer')(
 				{
 					browsers: 'last 2 versions'
