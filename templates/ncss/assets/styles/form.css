@@ -1,34 +1,27 @@
 /**
  * @tableofcontents
  *
- * 1. form default
+ * 1. form
  */
 
-/** @section 1. form default */
+/** @section 1. form */
 
 .rs-form-default
 {
-	& fieldset li
+	& li + li
 	{
-		margin-bottom: 0.5em;
-		margin-top: 0.5em;
+		margin-top: 1em;
 	}
 
 	& .rs-label-default
 	{
 		display: block;
-		margin-bottom: 0.25em;
-		margin-top: 1.5em;
+		margin-bottom: 0.5em;
 
 		&:after
 		{
 			content: ':';
 		}
-	}
-
-	& .rs-label-message:after
-	{
-		content: ':\00a0' attr(data-message);
 	}
 
 	& .rs-button-default

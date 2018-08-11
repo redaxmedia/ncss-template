@@ -6,17 +6,17 @@
 
 	<!-- sidebar -->
 
-	<?php echo Tag::partial('templates/ncss/sidebar.phtml'); ?>
+	<?php echo Tag::partial('ncss/sidebar.phtml'); ?>
 
 	<!-- error -->
 
-	<?php if (Tag::getRegistry('contentError')): ?>
-		<?php echo Tag::partial('templates/ncss/error.phtml'); ?>
+	<?php if (Helper::getRegistry('contentError')): ?>
+		<?php echo Tag::partial('ncss/error.phtml'); ?>
 
 	<!-- else content -->
 
 	<?php else: ?>
-		<?php echo Tag::partial('templates/ncss/content.phtml'); ?>
+		<?php echo Tag::partial('ncss/content.phtml'); ?>
 	<?php endif; ?>
 
 </main>

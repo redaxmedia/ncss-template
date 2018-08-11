@@ -6,15 +6,15 @@
 
 	<!-- title -->
 
-	<?php if (Tag::getSetting('title')): ?>
+	<?php if (Helper::getSetting('title')): ?>
 		<h1 class="rs-title-header">
-			<a href="<?php echo Tag::getRegistry('root'); ?>">
-				<?php echo Tag::getSetting('title'); ?>
+			<a href="<?php echo Helper::getRegistry('root'); ?>">
+				<?php echo Helper::getSetting('title'); ?>
 			</a>
 		</h1>
 	<?php endif; ?>
 
 	<!-- menu -->
 
-	<?php echo Tag::partial('templates/ncss/menu-toggle.phtml'); ?>
+	<?php echo Tag::partial('ncss/menu-toggle.phtml'); ?>
 </header>

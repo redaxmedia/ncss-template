@@ -3,5 +3,6 @@
 <!-- content -->
 
 <article id="content" class="rs-content">
-	<?php echo Tag::content(); ?>
+	<?php $content = Tag::content(); ?>
+	<?php echo $content ? $content : Tag::article(); ?>
 </article>

@@ -8,7 +8,7 @@ module.exports = () =>
 		{
 			src:
 			[
-				'templates/**/assets/**/*.{css,js}'
+				'templates/**/assets/**/*.css'
 			]
 		}
 	};
