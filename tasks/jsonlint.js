@@ -17,6 +17,7 @@ module.exports = () =>
 			src:
 			[
 				'.htmlhintrc',
+				'.ncsslintrc',
 				'.stylelintrc'
 			]
 		}
