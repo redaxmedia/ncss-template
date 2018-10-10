@@ -45,3 +45,5 @@ foreach ($categories as $category)
 		}
 	}
 }
+
+return $navigationArray = [];
