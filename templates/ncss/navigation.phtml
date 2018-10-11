@@ -14,7 +14,7 @@
 				<?php else: ?>
 					<li>
 				<?php endif; ?>
-					<a href="<?php echo Helper::getRegistry('rewriteRoute') . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
+					<a href="<?php echo Helper::getRegistry('parameterRoute') . $subArray['route']; ?>"><?php echo $subArray['title']; ?></a>
 
 					<!-- children -->
 
@@ -22,7 +22,7 @@
 						<ul class="rs-list-children">
 							<?php foreach ($subArray['children'] as $articleArray): ?>
 								<li>
-									<a href="<?php echo Helper::getRegistry('rewriteRoute') . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
+									<a href="<?php echo Helper::getRegistry('parameterRoute') . $articleArray['route']; ?>"><?php echo $articleArray['title']; ?></a>
 								</li>
 							<?php endforeach; ?>
 						</ul>
