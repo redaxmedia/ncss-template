@@ -11,8 +11,9 @@
 
 .rs-title-menu
 {
-	color: var(--rs-color-common-01);
+	color: var(--rs-color-tertiary);
 	font-size: 2.75em;
+	letter-spacing: 0.125em;
 	padding: 0.5em 1em;
 	text-align: center;
 }
@@ -29,7 +30,7 @@
 	
 	& > li > a
 	{
-		background: var(--rs-color-common-01);
+		background: var(--rs-color-tertiary);
 		color: gray(255);
 	}
 
@@ -61,7 +62,7 @@
 
 	.rs-label-toggle-menu
 	{
-		color: var(--rs-color-common-01);
+		color: var(--rs-color-tertiary);
 		cursor: pointer;
 		font: 1em arial;
 		height: 2.25em;
@@ -77,7 +78,7 @@
 		&:before,
 		&:after
 		{
-			background: var(--rs-color-common-01);
+			background: var(--rs-color-tertiary);
 			bottom: 3.75em;
 			content: '';
 			height: 0.25em;
@@ -89,7 +90,7 @@
 
 	.rs-fn-status-menu:not(:checked) + .rs-has-menu .rs-label-toggle-menu:after
 	{
-		box-shadow: 0 -0.5em 0 var(--rs-color-common-01), 0 0.5em 0 var(--rs-color-common-01);
+		box-shadow: 0 -0.5em 0 var(--rs-color-tertiary), 0 0.5em 0 var(--rs-color-tertiary);
 	}
 
 	.rs-fn-status-menu:checked + .rs-has-menu .rs-label-toggle-menu

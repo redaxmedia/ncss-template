@@ -12,7 +12,7 @@
 .rs-button-default
 {
 	@extend %rs-button;
-	background: var(--rs-color-common-01);
+	background: var(--rs-color-tertiary);
 	color: gray(255);
 }
 
