@@ -22,6 +22,11 @@
 	min-height: 100vh;
 }
 
+.rs-content
+{
+	flex-basis: 100%;
+}
+
 .rs-sidebar
 {
 	flex-basis: 100%;
