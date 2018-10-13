@@ -19,8 +19,8 @@
 .rs-link-documentation
 {
 	display: inline-block;
-	font-size: 0.625em;
+	font-size: 0.75em;
 	font-weight: bold;
-	margin-top: 3em;
+	margin-top: 2em;
 	text-transform: uppercase;
 }
