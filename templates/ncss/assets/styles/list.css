@@ -6,13 +6,18 @@
 
 /** @section 1. list */
 
-.rs-list-default > li
+.rs-list-default
 {
-	list-style: inherit;
-	list-style-position: inside;
+	list-style: disc;
 
-	& + li
+	& > li
 	{
-		margin-top: 0.25em;
+		list-style: inherit;
+		list-style-position: inside;
+
+		& + li
+		{
+			margin-top: 0.25em;
+		}
 	}
 }

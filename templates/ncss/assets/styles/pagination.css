@@ -22,10 +22,9 @@
 	& a,
 	& span
 	{
-		background: var(--rs-color-primary);
-		color: var(--rs-color-secondary);
+		background: gray(240);
 		display: block;
-		padding: 0.75em 0.5em;
+		padding: 1em;
 	}
 }
 

@@ -46,4 +46,4 @@ foreach ($categories as $category)
 	}
 }
 
-return $navigationArray = [];
+return $navigationArray;
