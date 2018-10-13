@@ -23,8 +23,9 @@
 	& span
 	{
 		background: gray(240);
+		border-radius: 0.25em;
 		display: block;
-		padding: 1em;
+		padding: 0.75em 1em;
 	}
 }
 
