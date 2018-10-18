@@ -116,7 +116,7 @@
 
 	.rs-label-close-menu
 	{
-		background: gray(0 / 20%);
+		background: gray(0, 0.2);
 		transition: opacity 0.2s;
 	}
 }
