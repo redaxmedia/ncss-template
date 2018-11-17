@@ -2,8 +2,13 @@
 namespace Redaxscript;
 
 $navigationArray = [];
-$categories = Db::forTablePrefix('categories')->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
-$articles = Db::forTablePrefix('articles')->where('author', 'documentation-sync')->orderByAsc('rank')->findMany();
+$whereArray =
+[
+	'author' => 'documentation-sync',
+	'status' => 1
+];
+$categories = Db::forTablePrefix('categories')->where($whereArray)->orderBySetting('rank')->findMany();
+$articles = Db::forTablePrefix('articles')->where($whereArray)->orderBySetting('rank')->findMany();
 
 /* process categories */
 
