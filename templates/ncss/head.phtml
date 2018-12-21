@@ -27,6 +27,7 @@
 
 <?php echo Tag::link()
 	->init()
+	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
 	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
 	->appendFile(
 	[
