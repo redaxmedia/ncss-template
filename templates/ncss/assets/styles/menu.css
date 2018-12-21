@@ -31,7 +31,7 @@
 	& > li > a
 	{
 		background: var(--rs-color-tertiary);
-		color: gray(255);
+		color: gray(100);
 	}
 
 	& .rs-list-children
@@ -115,7 +115,7 @@
 
 	.rs-label-close-menu
 	{
-		background: gray(0, 0.2);
+		background: gray(0 / 0.2);
 		transition: opacity 0.2s;
 	}
 }

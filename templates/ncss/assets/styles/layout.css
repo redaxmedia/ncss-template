@@ -9,7 +9,7 @@
 
 .rs-body
 {
-	background: gray(255);
+	background: gray(100);
 	color: var(--rs-color-primary);
 	font: 1em var(--rs-font-primary);
 }

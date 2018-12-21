@@ -35,11 +35,11 @@
 	
 	& tbody
 	{
-		background: gray(240);
+		background: gray(95);
 	
 		& tr:not(:last-child)
 		{
-			border-bottom: 0.125rem solid gray(255);
+			border-bottom: 0.125rem solid gray(100);
 		}
 	}
 }

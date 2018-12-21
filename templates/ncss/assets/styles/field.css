@@ -14,14 +14,14 @@
 .rs-field-textarea
 {
 	background: var(--rs-color-primary);
-	border: 0.25rem solid gray(0, 0);
+	border: 0.25rem solid gray(0);
 	color: var(--rs-color-secondary);
 	padding: 0.75em 0.5em;
 	width: 100%;
 
 	&:focus
 	{
-		background: gray(255);
+		background: gray(100);
 		border-color: var(--rs-color-primary);
 		color: var(--rs-color-primary);
 	}

@@ -13,7 +13,7 @@
 {
 	@extend %rs-button;
 	background: var(--rs-color-tertiary);
-	color: gray(255);
+	color: gray(100);
 }
 
 /** @section 2. query */
