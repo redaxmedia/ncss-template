@@ -42,6 +42,6 @@
 
 <?php echo Tag::script()
 	->init('head')
-	->prependFile('assets/scripts/init.js')
+	->prependInline(Helper::getContent('assets/scripts/init.js'))
 	->transportVar('rs', Helper::getTransport())
 	->concat(); ?>
