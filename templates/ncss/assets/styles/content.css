@@ -40,7 +40,7 @@
 
 .rs-box-content
 {
-	font-size: 1.125em;
+	font-size: 1.25em;
 
 	& p:not([class])
 	{
@@ -51,7 +51,6 @@
 
 .rs-box-byline
 {
-	font-size: 0.875em;
 	margin-top: 0.5em;
 
 	& span + span:before
