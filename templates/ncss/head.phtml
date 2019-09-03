@@ -29,14 +29,13 @@
 	->init()
 	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
 	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
+	->append(['href' => 'https://fonts.gstatic.com', 'rel' => 'preconnect'])
 	->appendFile(
 	[
 		'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=' . Helper::getSubset(),
 		'templates/ncss/dist/styles/ncss.min.css'
 	])
 	->concat(); ?>
-
-<?php echo Tag::link()->init('admin'); ?>
 
 <!-- head script -->
 
