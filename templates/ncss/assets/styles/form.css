@@ -8,6 +8,8 @@
 
 .rs-form-default
 {
+	font-size: 1.25rem;
+
 	& li + li
 	{
 		margin-top: 1em;
