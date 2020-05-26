@@ -38,7 +38,7 @@
 .rs-list-note
 {
 	list-style-position: inside;
-	list-style-type: decimal;
+	list-style-type: disc;
 }
 
 /** @section 1.4 button */
