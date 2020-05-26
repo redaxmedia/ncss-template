@@ -47,7 +47,11 @@
 	& p:not([class])
 	{
 		margin-bottom: 1em;
-		margin-top: 1em;
+
+		&:not(:first-child)
+		{
+			margin-top: 1em;
+		}
 	}
 }
 
