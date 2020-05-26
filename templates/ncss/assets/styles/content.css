@@ -43,31 +43,12 @@
 	font-size: 1.25em;
 	line-height: 1.5em;
 
-	& a:not([class])
-	{
-		text-decoration: underline;
-	}
+	@extend %box-content;
 
 	& p:not([class])
 	{
 		margin-bottom: 1em;
 		margin-top: 1em;
-	}
-
-	& ol:not([class]),
-	& ul:not([class])
-	{
-		list-style-position: inside;
-	}
-
-	& ol:not([class])
-	{
-		list-style-type: decimal;
-	}
-
-	& ul:not([class])
-	{
-		list-style-type: disc;
 	}
 }
 
