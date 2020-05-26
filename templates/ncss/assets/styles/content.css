@@ -42,10 +42,31 @@
 {
 	font-size: 1.25em;
 
+	& a:not([class])
+	{
+		text-decoration: underline;
+	}
+
 	& p:not([class])
 	{
-		line-height: 1.5em;
-		margin: 0.5em 0;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
+	& ol:not([class]),
+	& ul:not([class])
+	{
+		list-style-position: inside;
+	}
+
+	& ol:not([class])
+	{
+		list-style-type: decimal;
+	}
+
+	& ul:not([class])
+	{
+		list-style-type: disc;
 	}
 }
 
