@@ -37,7 +37,8 @@
 
 .rs-list-note
 {
-	list-style: inside decimal;
+	list-style-position: inside;
+	list-style-type: decimal;
 }
 
 /** @section 1.4 button */
