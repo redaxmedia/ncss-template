@@ -18,9 +18,9 @@
 
 /** @section 1.1 title */
 
-.rs-title-content
+.rs-title-content,
+.rs-title-content-sub
 {
-	font-size: 2em;
 	margin-bottom: 0.5em;
 
 	&:not(:first-child)
@@ -29,11 +29,14 @@
 	}
 }
 
+.rs-title-content
+{
+	font-size: 2em;
+}
+
 .rs-title-content-sub
 {
 	font-size: 1.25em;
-	margin-bottom: 0.5em;
-	margin-top: 1em;
 }
 
 /** @section 1.2 box */
