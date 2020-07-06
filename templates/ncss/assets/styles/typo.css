@@ -6,11 +6,6 @@
 
 /** @section 1. link */
 
-.rs-link-default
-{
-	text-decoration: underline;
-}
-
 .rs-link-documentation
 {
 	display: inline-block;

@@ -15,11 +15,11 @@
 {
 	font-size: 2em;
 	margin-bottom: 0.5em;
-}
 
-.rs-title-result:not(:first-child)
-{
-	margin-top: 1em;
+	&:not(:first-child)
+	{
+		margin-top: 1em;
+	}
 }
 
 /** @section 1.2 list */
