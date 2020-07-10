@@ -14,7 +14,7 @@
 		"autoprefixer": "9.8.4",
 		"colorguard": "1.2.1",
 		"cssnano": "4.1.10",
-		"grunt": "1.2.0",
+		"grunt": "1.2.1",
 		"grunt-htmlhint": "0.9.13",
 		"grunt-jsonlint": "2.1.2",
 		"grunt-ncss-linter": "5.4.0",
