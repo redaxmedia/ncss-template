@@ -1,0 +1,32 @@
+name: ci
+
+on: [ push, pull_request ]
+
+jobs:
+ lint:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Set up Node 15
+    uses: actions/setup-node@v1
+    with:
+     node-version: 15
+  - run: npm install
+  - run: node_modules/.bin/grunt
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Set up PHP 7.4
+    uses: shivammathur/setup-php@2.7.0
+    with:
+     php-version: 7.4
+  - name: Set up Node 15
+    uses: actions/setup-node@v1
+    with:
+     node-version: 15
+  - run: composer install
+  - run: npm install
+  - run: node_modules/.bin/grunt build
