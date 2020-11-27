@@ -1,7 +1,7 @@
 {
 	"name": "redaxmedia/ncss-template",
 	"description": "Template for NCSS's website",
-	"version": "4.3.1",
+	"version": "4.4.0",
 	"homepage": "https://ncss.io",
 	"license": "GPL-3.0",
 	"require":
@@ -10,6 +10,6 @@
 	},
 	"require-dev":
 	{
-		"redaxscript/redaxscript": "dev-master"
+		"redaxscript/redaxscript": "4.4.0"
 	}
 }
