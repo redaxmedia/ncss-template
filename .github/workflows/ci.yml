@@ -13,7 +13,7 @@ jobs:
     with:
      node-version: 15
   - run: npm install
-  - run: node_modules/.bin/grunt
+  - run: grunt
  build:
   runs-on: ubuntu-latest
   steps:
@@ -29,4 +29,4 @@ jobs:
      node-version: 15
   - run: composer install
   - run: npm install
-  - run: node_modules/.bin/grunt build
+  - run: grunt build
